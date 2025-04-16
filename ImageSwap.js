@@ -57,13 +57,13 @@ function GameSwitch(){
             image.src = "image/Games/AOE2.gif"
             break;
         case 1:
-            image.src = "image/Games/AOE2 Cannons.png"
+            image.src = "image/Games/AOE2 Cannons.PNG"
             break;
         case 2:
-            image.src = "image/Games/AOE2 Bridge.png"
+            image.src = "image/Games/AOE2 Bridge.PNG"
             break;
         case 3:
-            image.src = "image/Games/Inferno.png"
+            image.src = "image/Games/Inferno.PNG"
             break;
         default:
             break;
