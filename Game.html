@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About this guy</title>
+        <link rel="Stylesheet" href="web.css">
+        <script src="Sudoku.js"></script> 
+        <script src="targetPractice.js"></script> 
+        <script src="mathGame.js"></script>
+        <link rel="icon" href=".ico">
+    </head>
+
+    <body >
+        <div>
+            <img src="image/Art/SwordAxe.jpg" id="Watermark">
+        </div>
+
+        <div class="Bar">
+            <a id="Main" href="Main.html">Main</a>
+            <a id="about" href="About.html">About</a>
+            <a id="port" href="portfolio.html">Portfolio</a>
+            <a id="gallery" href="gallery.html">Gallery</a>
+            <a id="game" href="Game.html">Minigames</a>
+            <a id="guides" href="Guide.html">Guides</a>
+            <a id="Philosophy" href="Philosophy.html">Philosophy</a>
+        </div>
+
+        <div id="GameGrid">
+            <div id="SudokuUI">
+                <canvas id="Sudoku" width="500" height="550" ></canvas>
+                <script>createSudoku(); resetSudoku();</script>
+                <button id="newgame" type="button" onclick="randomizeSudoku()">New Board</button>
+            </div>
+    
+            <div id="SudokuInstructions">
+                <h4>Pseudo Sudoku</h4>
+                <h2>Some details about the game on the right</h2>
+                <p id="Game">
+                    Let's see if I know how to code a minigame. &ensp;
+                    It should be on the right side. &ensp; 
+                    If it's not there, I failed. &ensp; 
+                    If I remember, it should be doable with basic javascript. &ensp; 
+                    The first and only game I made using Javascript was asteroids. &ensp; 
+                    This one is a randomized version of Sudoku.<br><br>
+                    Rules:<br>
+                    Fill up the chart with numbers 1-9<br>
+                    A number should be unique inside the 3x3 box, outlined by the purple dividers; vertically; and horizontally
+                </p>
+    
+                <h2>How to navigate the controls</h2>
+                <p id="Gameplay">
+                    Click the "New board" button to generate a new Sudoku puzzle.<br>
+                    Click on a number at the bottom of the board. &ensp;
+                    It will turn orange if it's selected. <br>
+                    Click on an empty square. <br>
+                    If it's green, the rules are followed. <br>
+                    If it's red, the number exist somewhere. <br>
+                    If you need to erase, click on it again with the same number.<br>
+                    There is no set solution which means 2 things: <br>
+                    1. Solution will not be unique. <br>
+                    2. If the puzzle ends up being unsolveable, sorry about that. <br>
+                </p>
+            </div>
+
+            <div class="e1" id="divider"></div>
+
+            <div id="targetGameUI">
+                <canvas id="targetCanvas" width="700" height="400"></canvas>  
+                <img id="dartboard" src="image/Art/Target.png" style = "display: none"; />
+                <button id="targetSpawn" type="button" onclick="beginGame()">Start</button>
+                <p id="Status">
+                
+                </p>
+            </div>
+
+            <div id="targetInstructions">
+                <h4>Target Practice</h4>
+                <h2>What is this?</h2>
+                <p>
+                    This is a shooting game.<br>
+                    Your goal is to click and break the targets that pop up on screen.<br>
+                    There's a limited time that the target stays.<br>
+                    There's also a randomized pattern the targets appear.<br>
+                    At the end, there will be statistics of how well or poorly you did.<br>
+                </p>
+    
+                <h2>Controls</h2>
+                <p>
+                    1. Click the Start button to begin.<br>
+                    2. There will be a 1.5 second delay to get you ready.<br>
+                    3. Targets appear, you click on them.<br>
+                    4. Endure for a minute.<br>
+                    5. Profit!<br>
+                </p>
+            </div>
+            <script>starterTarget();</script>
+
+            <div class="e2" id="divider"></div>
+
+            <div id="MathUI">
+                <canvas id="MathGame" width="450" height="300"></canvas>
+                <script>createMathBoard();</script>
+                <div id="MathOptions">
+                    <div>
+                        <button type="button" onclick="setOperation(this)">Addition</button>
+                        <button type="button" onclick="setOperation(this)">Subtraction</button>
+                        <button type="button" onclick="setOperation(this)">Multiplication</button>
+                        <button type="button" onclick="setOperation(this)">Division</button>
+                    </div>
+                    <div style="display: flex;">
+                        <p>First number</p>
+                        <button type="button" onclick="setLength1(this)">Single Digit</button>
+                        <button type="button" onclick="setLength1(this)">Double Digit</button>
+                    </div>
+                    <div style="display: flex;">
+                        <p>Second number</p>
+                        <button type="button" onclick="setLength2(this)">Single Digit</button>
+                        <button type="button" onclick="setLength2(this)">Double Digit</button>
+                    </div>
+                    <div style="display: flex;">
+                        <p>Orientation</p>
+                        <button type="button" onclick="changeHorizon()">Horizontal</button>
+                        <button type="button" onclick="changeVert()">Vertical</button>
+                    </div>
+                    <div style="display: flex;">
+                        <p>Fractions: </p>
+                        <button type="button" onclick="changeFrac(this)">On</button>
+                        <button type="button" onclick="changeFrac(this)">Off</button>
+                    </div>
+
+                    <button type="button" onclick="startMathGame()">Start</button>
+                    <input type="text" id="Answer" onkeydown="attemptQuestion(event)">
+                </div>
+            </div>
+                    
+            <div id ="MathInstructions">
+                <h4>Math Marathon</h4>
+                <h2>What is it?</h2>
+                <p>
+                    This is a math crunching game.<br>
+                    Math questions will appear on the board.<br>
+                    You have to answer it accurately.<br>
+                    Answer them correctly as long as possible.<br>
+                    The game ends when you fail or when you answer 100 questions correctly.<br>
+                    No calculator, no writing.&ensp;
+                    You are challenged purely on mental computations.<br>
+                    This was a daily activity I was given as a child.&ensp;
+                    You are given some mercy, my teacher set a time limit of 5 minutes for the whole class.<br>
+                    Never underestimate basic operations.&ensp;
+                    It helps daily life really effectively.<br>
+                </p>
+
+                <h2>Controls</h2>
+                <p >
+                    Setup is trickier and has lots of nuances<br>
+                    1. Operations by default is addition.&ensp;
+                    That can be changed with a button click.<br>
+                    2. Set whether the first number is single or double digit.&ensp;
+                    Default is single. <br>
+                    &ensp; &ensp; a. If operations are division, then it sets the digits of your answer.<br>
+                    3. Set whether the second number is single or double digit.&ensp;
+                    Default is single.<br>
+                    &ensp; &ensp; a. If operations are subtraction, if you set first to single and second to double,
+                    you will get meaningless questions.<br>
+                    4. Click start when you are ready.<br>
+                    5. When questions appear, type your answer in the textbox.<br>
+                    6. Survive 100 questions. <br>
+                    7. If you get a mistake, it ends immediately.<br>
+                    8. It will show how many are right and how long you took.<br>
+                </p>
+            </div>   
+        </div>
+    </body>
+</html>

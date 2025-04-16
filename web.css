@@ -1,0 +1,322 @@
+body{
+    background-color: black;
+    padding-bottom: 20px;
+}
+
+h1{
+    color: rgb(235, 245, 94);
+    margin: 3%;
+}
+
+h2{
+    display: inline;
+    color: rgb(190, 131, 54);
+    margin-left: 3%;
+    font-size: 25px;
+}
+
+h3{
+    display: inline;
+    color: rgb(77, 135, 223);
+    margin-left: 3%;
+    font-size: 30px;
+}
+h4{
+    color: rgb(77, 135, 223);
+    margin-left: 3%;
+    font-size: 30px;
+}
+
+p{
+    color: aliceblue;
+    line-height: 1.5;
+    font-size: 20px;
+    margin-left: 3%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.Bar{
+    width: 100%;
+    text-align: right;
+
+    border-image: linear-gradient(to right, rgba(122, 231, 250, 0.8), rgba(252, 213, 86, 0.8), rgba(126, 128, 253, 0.8), rgba(230, 110, 176, 0.8)) 1 0 1 0;
+
+    border-top-width: 100%;
+    border-bottom-width: 100%;
+    border-style: solid;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.e1{
+    grid-area: div1;
+}
+
+.e2{
+    grid-area: div2;
+}
+
+.PhiloOptions{
+    height: 70px;
+    width: 100%;
+}
+
+.Section{
+    width: 99%;
+    margin: 0.6% 0.5%;
+}
+
+#blogCore{
+    display: inline-block;
+    text-align: center;
+    margin-left: 20%;
+    margin-top: 5px;
+    padding: 5px;
+    padding-right: 20px;
+    max-height: 500px;
+    width: 78%;
+
+    overflow:hidden;
+
+    border-style: solid;
+    border-color: rgb(122, 231, 250);
+    border-width: 1px;
+}
+
+#Emphasis{
+    font-weight: bold;
+    color: rgb(109, 206, 96);
+}
+
+#Main, #about, #port, #gallery, #game, #guides, #Philosophy{
+    font-size: 26px;
+    color: aliceblue;
+    padding-right: 7px;
+}
+
+#answer{
+    width: 70%;
+    border-image: linear-gradient(to right, rgba(122, 231, 250, 0.8), rgba(252, 213, 86, 0.8), rgba(126, 128, 253, 0.8), rgba(230, 110, 176, 0.8)) 0 0 1 0;
+    border-bottom-width: 70%;
+    border-style: solid;
+}
+
+#BuddyDesc, #WaterbomberDesc{
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 30px;
+    border-color: rgb(122, 231, 250);
+    border-style: groove;
+    border-radius: 20px;
+    height: 600px;
+    overflow: hidden;
+    vertical-align: bottom;
+}
+
+#WaterbomberDesc{
+    height: 600px;
+}
+
+#dartboard{
+    width: 30px;
+    height: 30px;
+}
+
+#divider{
+    border-image: linear-gradient(to right, rgba(122, 231, 250, 0.8), rgba(252, 213, 86, 0.8), rgba(126, 128, 253, 0.8), rgba(230, 110, 176, 0.8)) 0 0 1 0;
+    border-bottom-width: 70%;
+    border-style: solid;
+}
+
+#Exhibit{
+    display: inline-block;
+    padding:1%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 22%;
+    max-height: 150px;
+    
+}
+
+#Find, #Game, #Goal, #Gameplay{
+    width: 80%;
+}
+
+#Gal{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-height: 250px;
+    opacity: 0.4;
+}
+
+#Gal:hover{
+    opacity: 1;
+}
+
+#GameGrid{
+    display:grid;
+    grid-template-areas: 
+    "sect1 sect2"
+    "div1 div1"
+    "sect3 sect4"
+    "div2 div2"
+    "sect5 sect6";
+    
+    gap: 0px;
+    column-gap: 0px;
+    padding: 15px;
+    border-width: 0px;
+}
+
+#intro{
+    float:right;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+#MathUI{
+    grid-area: sect6;
+    align-content: center;
+}
+
+#MathGame{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#MathInstructions{
+    grid-area: sect5;
+}
+
+#MathOptions{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#ProtoBuddy, #Waterbomber{
+    margin-left: 3%;
+    margin-right: 3%;
+    padding: 30px;
+    border-color: rgb(122, 231, 250);
+    border-style: groove;
+    border-radius: 20px;
+    height: 1000px;
+    overflow: hidden;
+}
+
+#ProtoDisplay1, #ProtoDisplay2, #ProtoDisplay3, #ProtoDisplay4, #ProtoDisplay5{
+    max-height: 300px;
+    max-width: 20%;
+    min-width: 10%;
+    padding: 5px;
+}
+
+#SplashDisplay1, #SplashDisplay2, #SplashDisplay3, #SplashDisplay4, #SplashDisplay5{
+    max-height: 300px;
+    max-width: 30%;
+    min-width: 10%;
+    padding: 5px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#screenshots{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#Question{
+    color: rgb(190, 131, 54);
+}
+
+#right{
+    display:inline;
+}
+
+#ShowcaseMe, #ShowcaseFav, #ShowcaseFood, #ShowcaseGames{
+    display:inline;
+    float: right;
+    width: 400px;
+    align-self: center;
+    max-width: 400px;
+    max-height: 500px;
+}
+
+#Status{
+    float:none;
+    display:block;
+    width: 300px;
+}
+
+#newgame{
+    max-width: 100px;
+    max-height: 100px;
+}
+
+#Sudoku{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#SudokuInstructions{
+    grid-area: sect1;
+}
+
+#SudokuUI{
+    grid-area: sect2;
+    align-content: center;
+}
+
+#tableOfContent{
+    position:fixed;
+    top: 220px;
+    width: 18%;
+    height: 100%;
+
+    border-style: solid;
+    border-color: rgb(35, 255, 53);
+    border-width: 3px;
+}
+
+#targetCanvas{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#targetGameUI{
+    grid-area: sect3;
+    align-content: center;
+}
+
+#targetSpawn{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#targetInstructions{
+    grid-area: sect4;
+}
+
+#Title{
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#Watermark{
+    width:140px;
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About this guy</title>
+        <script src="SwapShowcase.js"></script> 
+        <link rel="Stylesheet" href="web.css">
+        <link rel="icon" href=".ico">
+    </head>
+
+    <body>
+        <div>
+            <img src="image/Art/SwordAxe.jpg" id="Watermark">
+        </div>
+
+        <div class="Bar">
+            <a id="Main" href="Main.html">Main</a>
+            <a id="about" href="About.html">About</a>
+            <a id="port" href="portfolio.html">Portfolio</a>
+            <a id="gallery" href="gallery.html">Gallery</a>
+            <a id="game" href="Game.html">Minigames</a>
+            <a id="guides" href="Guide.html">Guides</a>
+            <a id="Philosophy" href="Philosophy.html">Philosophy</a>
+        </div>
+
+        <h2 id="Title">Assistant Buddy</h2>
+        <div id="ProtoBuddy">
+            <div id="screenshots">
+                <img src="" id="ProtoDisplay1">
+                <img src="" id="ProtoDisplay2">
+                <img src="image\Coding\AssistBuddy/AssistFront.PNG" id="ProtoDisplay3">
+                <img src="" id="ProtoDisplay4">
+                <img src="" id="ProtoDisplay5">
+            </div>
+            <p id="BuddyDesc" onclick="assistImage(this)">
+                This is a recent Windows App <b onclick="assistImage(this)" style="color:rgb(185, 30, 196)">prototype</b> I developed which I will later adapt for android phones.&ensp;
+                The app is a personal assistance tool whose purpose is to keep track of information about daily life needs.&ensp;
+                It is designed to be minimalistic and simplistic while incorporating smartphone controls for consistency.&ensp;
+                The reason for the design choice is to make it more accessible towards people who are not tech-savvy.&ensp;
+                Currently, there are 5 working tools: scheduler, sticky notes, stop watch, Pomodoro timer, and cookbook.&ensp;
+                <br><br>
+                The <b onclick="assistImage(this)" style="color:rgb(185, 30, 196)">scheduler</b>allows users to organize and plan their future commitments.&ensp;
+                Users fill out a form regarding their appointment which will include the date and description.&ensp;
+                On the schedule, the appointments will be ordered by their date on load and any appointments past the due date can be cleared with a button.&ensp;
+                There is also a backup button to reorder the list in case something goes wrong.&ensp;
+                When there are lots of tasks added already, users can filter and reduce the list by specifying a name, task type, or date.&ensp;
+                I would have it automatically sorted, but I found that sticking it at the very end lets users make edits more conveniently if they made a mistake.&ensp;
+                An interesting QOL is the inclusion of today's date on the top of the menu to remind users what day it is today.&ensp;
+                In terms of future updates, I plan to add more visual indicators to make the system more intuitive.&ensp;
+                <br><br>
+                <b onclick="assistImage(this)" style="color:rgb(185, 30, 196)">Sticky notes</b> is very straightforward about what it does.&ensp;
+                Write a short note and it's there.&ensp;
+                Short, simple, and a classic.&ensp;
+                So how does this stand out from others?&ensp;
+                Well, the notes can be organized into different user-made categories.&ensp;
+                That way, users can have notes for different situations or use it as a quick checklist.&ensp;
+                For example, users can have a set for groceries, and another set for chores.&ensp;
+                Inputing is also very easy, simply add an item, type a phrase, and done.&ensp;
+                As for future plans of its feature, I want to implement colour customizations and rescale the UI for better reading comfort.&ensp;
+                <br><br>
+                The <b onclick="assistImage(this)" style="color:rgb(185, 30, 196)">stop watch</b> is very subtle but has a surprising amount of quality of life features.&ensp;
+                Aside from a usual watch that counts up, it can also...count down.&ensp;
+                Okay, that was not the surprise, I just wanted to put a sarcastic joke.&ensp;
+                The tool has 4 modes which are tailored for very peculiar situations.&ensp;
+                There is the stopwatch which will count up, can pause, and resets to 0 when stopped.&ensp;
+                There is a countdown timer which will start from a user set time and count down to 0.&ensp;
+                Another function is suited for keeping track of one person and their lap times.&ensp;
+                The last function is for keeping track of groups of people passing a finish line.&ensp;
+                In terms of future developments, I want to add a sound cue for the countdown timer and rearrange the layout for better use with 1 hand.&ensp;
+                <br><br>
+                The <b onclick="assistImage(this)" style="color:rgb(185, 30, 196)">Pomodoro</b> timer is a studying tool.&ensp;
+                For anyone unaware, Pomodoro is a study strategy where the person will study and work for about 25 minutes and then take a 5 minute break.&ensp;
+                After repeating the on and off work 4 times, they would take a 30 minute break.&ensp;
+                The purpose is to maintain a steady workflow and make sure the person does not have a burnout or get stumped on issues.&ensp;
+                For my app, users would set their study and break time.&ensp;
+                Then they will ideally commit to this but in case something happens, users can pause the timer to handle unexpected situations.&ensp;
+                There is an optional audio cue when it is time to switch which users can add to if they desire so.&ensp;
+                To be honest, this was dissatisfying to build.&ensp;
+                My reason is that seeing the timer may encourage people to procrastinate and watch the timer when it is close to the switch time.&ensp;
+                It's similar to the idea that if a person really dislikes the work, they may end up distracting themselves or ending early.&ensp;
+                To remedy it, I want an option to replace the timer with two animations instead.&ensp;
+                One will be an animal working, and another when they are lounging.&ensp;
+                That way, there is still a visual indicator, but a less obvious gauge of how long users have to work for.&ensp;
+                <br><br>
+                Finally, the <b onclick="assistImage(this)" style="color:rgb(185, 30, 196)">cookbook</b> 
+                is a record of recipes entered by the user.&ensp;
+                It doesn't look great right now, but it is fully usable.&ensp;
+                The tool stores user made books which each contain recipes.&ensp;
+                That way, users can organize their recipes and assign a theme to each one.&ensp;
+                It employs common smartphone UI to hide and reveal ingredients while maintaining the recipe to review.&ensp;
+                Users are able to create recipes and include ingredients and their amount.&ensp;
+                Should the user need more details, they can click on the step to show more information.&ensp;
+                <br><br>
+                The app is still in development to continue adding tools and improve ergonomics.&ensp;
+                Currently, there is a finance tracker being developed to keep track of money in the user's wallets.&ensp;
+                No, it's not automatic, but it will raise awareness of your cash spending.&ensp;
+            </p>
+        </div>
+
+        <h2 id="Title">Splash Fight</h2>
+        <div id="Waterbomber">
+            <div id="screenshots">
+                <img src="" id="SplashDisplay1">
+                <img src="" id="SplashDisplay2">
+                <img src="image/Coding/Splash/StartScreen.PNG" id="SplashDisplay3">
+                <img src="" id="SplashDisplay4">
+                <img src="" id="SplashDisplay5">
+            </div>
+            <p id="WaterbomberDesc" onclick="bomberImage(this)">
+                This is my first attempt of creating a <b onclick="bomberImage(this)" style="color:rgb(185, 30, 196)">game</b> using the Unity Engine.&ensp;
+                What's the game about?&ensp;
+                It's a recreation of a classic game...Bomberman.&ensp;
+                Wait, you know what Bomberman is, right?&ensp;
+                Game from the 90s by Hudson Soft starring a guy with a white helmet that drops blue bombs to eliminate the enemy.&ensp;
+                Maybe I'm old.&ensp;
+                Well, I'll explain that, just in case you don't know.&ensp;
+                It is a game about dropping bombs and blowing up obstacles so you can get closer to your target, and blow them up.&ensp;
+                The series had branched out into other genres in later iterations and refined its mechanics to also include mounts and a story.&ensp;
+                This is on top of powerups you would collect from destroyed obstacles which increases firepower, speed, the number of bombs you can drop at once, and even unlock the ability to kick bombs forward.&ensp;
+                The version that I grew up with is <b onclick="bomberImage(this)" style="color:rgb(185, 30, 196)">Neo Bomberman</b>.&ensp;
+                <br><br>
+                The game I made features the core gameplay of Bomberman, a map creation tool, and custom models.&ensp;
+                The players are able to move around using a keyboard or a controller with the help of built-in from the Unity Engine.&ensp;
+                They can also deploy bombs to destroy obstacles for power-ups or destroy other players.&ensp;
+                If players find a power-up, they can pick it up by running into it.&ensp;
+                The <b onclick="bomberImage(this)" style="color:rgb(185, 30, 196)">power-ups</b> can either increase speed, firepower, or bomb count.&ensp;
+                There is a power-up which is a gamble of greatly increasing speed or firepower, but it can greatly reduce your character's speed.&ensp;
+                Why doe it exist?&ensp;
+                It makes the game a bit more exciting questioning if you will hit a jackpot.&ensp;
+                To win, players must be the last to survive.&ensp;
+                It can be played in local multiplayer with up to 4 people which includes controller support but everyone can play on the same keyboard if it's not an option.&ensp;
+                It's a tight fit, but you only need one hand to play if you decide to go the <b onclick="bomberImage(this)" style="color:rgb(185, 30, 196)">keyboard</b> route.&ensp;
+                For controllers, there's a setting to only use half the controller so that way you only need 2 controllers for 4 players.&ensp;
+                If nobody is around to play with because everyone is too busy, there is an option to enable bots to fill the void.&ensp;
+                The AI has 3 difficulty settings which improves its pathfinding and decision making.&ensp;
+                That said, I might have made the "Hard difficulty" a bit too extreme.&ensp;
+                At its hardest, it can dig its way towards power-ups and players and calculate the time needed to weave in between explosions.&ensp;
+                It has gotten to a point where if the player is not fast enough, it is impossible to win by blowing them up.&ensp;
+                <br><br>
+                Using <b onclick="bomberImage(this)" style="color:rgb(185, 30, 196)">Blender</b>, I created the non-geometric 3D objects in the game.&ensp;
+                This would include the boot, bombs, and the player character.&ensp;
+                For my first time, I think I did fine using a modelling program.&ensp;
+                I also drew the symbols and background artwork by hand and used generic free-to-use textures for some of the models.&ensp;
+                What I learned from my experience is that most of the UI in Blender shouldn't be looked at if I'm just creating a static model.&ensp;
+                Instead, I should've paid more attention to the shortcut keys since those made the creation process much faster.&ensp;
+                <br><br>
+                The map <b onclick="bomberImage(this)" style="color:rgb(185, 30, 196)">creation</b> tool allows me, as the developer, to create maps efficiently and without manually adjusting objects to the correct position.&ensp;
+                However, players can make their own <b onclick="bomberImage(this)" style="color:rgb(185, 30, 196)">maps</b> if they have their own textures and models.&ensp;
+                It stores the map as a text file that utilizes keywords to generate the objects in 
+                game.&ensp;
+                There is a special program designed to regenerate a default map if the user tries to delete the map in question.&ensp;
+                The design is flexible in the sense that any model can be used and GameObjects (yes, I meant to spell that) will rescale to a specific width and length.&ensp;
+                The hitbox is a fixed size so the player won't slip into grooves or get stuck.&ensp;
+                <br><br>
+                From the 3 weeks that it took to develop and playtest the game, I learned many tricks and understood the mistakes I made which I will apply to future projects.&ensp;
+                To save some time, I will just share 3 things.&ensp;
+                <br>
+                1. I learned that I can make new UI components as its own modules which can be incorporated and reused as a component in other programs.&ensp;
+                One example of this is the assistance tool I developed, which featured a custom item list.&ensp;
+                Thanks to it, selecting an item can trigger a custom method to run as well as allowing items to be resized.&ensp;
+                <br>
+                2. As mentioned earlier, it was my first time using Blender.&ensp;
+                Though I learned many things, including the value of shortcut keys, the biggest thing I learned about Blender is that textures can be exported and reimported.&ensp;
+                Why is this important?&ensp;
+                It's because I can open my usual image creation software and draw the textures on.&ensp;
+                To assist with the process, I would put coloured markers at specific points which indicate the face, orientation, and size.&ensp;
+                <br>
+                3. I learned to accept that the IDE for the Unity Engine has poor ergonomics.&ensp;
+                The words blend into the background: not only the properties, but also the preferences and the settings.&ensp;
+                There's also the times where it would unexpectedly crash or freeze completely because I breathed on it with my mouse.&ensp;
+                So, yes, I've grown to accept it and encouraged me to explore other engines.&ensp;
+            </p>
+        </div>
+    </body>
+</html>
