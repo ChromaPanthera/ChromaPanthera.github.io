@@ -70,15 +70,15 @@ function bomberImage(elem){
     else if(elem.innerText == "Neo Bomberman"){
         document.getElementById("SplashDisplay1").src = "";
         document.getElementById("SplashDisplay2").src = "image/Games/NeoBombermanStart.jpg";
-        document.getElementById("SplashDisplay3").src = "image/Games/NeoBombermanFish.PNG";
+        document.getElementById("SplashDisplay3").src = "image/Games/NeoBombermanFish.png";
         document.getElementById("SplashDisplay4").src = "image/Games/neo_bombermanBouncer.jpg";
         document.getElementById("SplashDisplay5").src = "";
     }
     else if(elem.innerText == "power-ups"){
         document.getElementById("SplashDisplay1").src = "image/Coding/Splash/3DCup.PNG";
-        document.getElementById("SplashDisplay2").src = "image/Coding/Splash/WaterSprite.PNG";
+        document.getElementById("SplashDisplay2").src = "image/Coding/Splash/WaterSprite.png";
         document.getElementById("SplashDisplay3").src = "image/Coding/Splash/3DDemonHead.PNG";
-        document.getElementById("SplashDisplay4").src = "image/Coding/Splash/DevilSprite.PNG";
+        document.getElementById("SplashDisplay4").src = "image/Coding/Splash/DevilSprite.png";
         document.getElementById("SplashDisplay5").src = "image/Coding/Splash/3DRoller.PNG";
     }
     else if(elem.innerText == "keyboard"){
